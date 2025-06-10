@@ -1,0 +1,5 @@
+numer_lotu,miasto_start,miasto_koniec,klasa,cena,ilosc_miejsc
+LO101,Warszawa,Londyn,Ekonomiczna,450.0,100
+LO102,Krakow,Paryz,Biznesowa,1200.0,20
+LO103,Gdansk,Berlin,Ekonomiczna,300.0,50
+LO104,Wroclaw,Rzym,Biznesowa,1100.0,15
