@@ -1,6 +1,5 @@
-/**
- * Klasa reprezentująca lot.
- */
+// Lot.java
+/** Klasa reprezentująca pojedynczy lot. */
 public class Lot {
     String numerLotu;
     String miastoStart;
@@ -9,8 +8,7 @@ public class Lot {
     double cena;
     int iloscMiejsc;
 
-    public Lot(String numerLotu, String miastoStart, String miastoKoniec, 
-               String klasa, double cena, int iloscMiejsc) {
+    public Lot(String numerLotu, String miastoStart, String miastoKoniec, String klasa, double cena, int iloscMiejsc) {
         this.numerLotu = numerLotu;
         this.miastoStart = miastoStart;
         this.miastoKoniec = miastoKoniec;

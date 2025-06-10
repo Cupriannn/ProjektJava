@@ -1,26 +1,23 @@
-/**
- * Klasa reprezentująca rezerwację biletu.
- */
+// Rezerwacja.java
+/** Klasa przechowująca dane rezerwacji. */
 public class Rezerwacja {
-    String imieNazwisko;
+    String imie;
     String numerLotu;
-    int iloscZarezerwowanych;
+    int iloscMiejsc;
     double lacznaCena;
 
-    public Rezerwacja(String imieNazwisko, String numerLotu, int iloscZarezerwowanych, double lacznaCena) {
-        this.imieNazwisko = imieNazwisko;
+    public Rezerwacja(String imie, String numerLotu, int iloscMiejsc, double lacznaCena) {
+        this.imie = imie;
         this.numerLotu = numerLotu;
-        this.iloscZarezerwowanych = iloscZarezerwowanych;
+        this.iloscMiejsc = iloscMiejsc;
         this.lacznaCena = lacznaCena;
     }
 
-    @Override
     public String toString() {
-        return String.format("%-20s | %-8s | %2d miejsc | %.2f zł", 
-            imieNazwisko, numerLotu, iloscZarezerwowanych, lacznaCena);
+        return imie + ", " + numerLotu + ", " + iloscMiejsc + ", " + lacznaCena;
     }
 
     public String toCsv() {
-        return imieNazwisko + "," + numerLotu + "," + iloscZarezerwowanych + "," + lacznaCena;
+        return imie + "," + numerLotu + "," + iloscMiejsc + "," + lacznaCena;
     }
 }
