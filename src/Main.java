@@ -1,6 +1,10 @@
 // Main.java
 import java.util.*;
 
+import service.LotManager;
+import service.RezerwacjaManager;
+import service.Statystyki;
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -40,7 +44,7 @@ public class Main {
                         rezerwacjaManager.zarezerwujBilet(scanner, lotManager, statystyki);
                         break;
                     case 4:
-                        rezerwacjaManager.usunBilet();
+                        rezerwacjaManager.usunBilet(scanner, lotManager);
                         break;    
                     case 5:
                         rezerwacjaManager.wyswietlRezerwacje();
